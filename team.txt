@@ -1,4 +1,4 @@
-Ranajit Das -> (crate repo and pagelinking)
+Ranajit Das -> (create repo and pagelinking)
 Tridip Rong -> task-2(create navbar)
 Saksham Kumar Singh -> task-3(signup page)
 Akshaya Annadurai -> task-4(login page)
