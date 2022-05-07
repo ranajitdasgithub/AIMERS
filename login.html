@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            
+            height:100vh;
+            width:100%;
+            background-color: rgb(114, 42, 215);
+            place-items: center;
+        }
+        #container{
+            height:500px;
+            width:350px;
+            margin:auto;
+            margin-top:50px;
+            background-color: white;
+            border:1px solid teal;
+            border-radius: 15px;
+        }
+        h1{
+            text-align: center;
+            margin-top:20%;
+        }
+        #email{
+            margin-left:18%;
+            margin-top:25%;
+            border:0px;
+            padding-bottom:5px;
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.502);
+        }
+       #password{
+           margin-top:8%;
+           margin-left:18%;
+           border:0px;
+           padding-bottom:5px;
+           border-bottom: 1.5px solid rgba(0, 0, 0, 0.502);
+       }
+       #login{
+           width:70%;
+           height: 30px;px;
+           margin:5% 15% 0 15%;
+           border:none;
+           color:white;
+           background-color: rgb(89, 39, 158);
+       }
+       p{
+           text-align: center;
+           margin:4px 0 14px 0;
+       }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Login</h1>
+        <form id = "basicForm">
+            <div>
+                <input id = "email" type = "text" placeholder = "Email"/><br><br>
+            </div>
+            <div>
+                <input id = "password" type = "number" placeholder = "Password"/><br><br>
+            </div>
+            
+            
+            <input  id="login" type = "submit" value = "Login"  /><br><br>
+        </form>
+        <p>Forgot <a href="">Password</a>?</p>
+        <p>Don't have a account? <a href="">Sing up</a></p>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#basicForm").addEventListener("submit",loginData);
+    var signUpData=JSON.parse(localStorage.getItem("registrationData"));
+    console.log(signUpData)
+    function loginData(){
+        if(signUpData.email==basicForm.email.value && signUpData.password==basicForm.password.value){
+             alert("Log in successfull")
+            window.open("mens.html")
+        }
+        else if(signUpData.password!=basicForm.password.value){
+            alert("Password is incorrect")
+        }
+        else{
+            alert("Incorrect details")
+        }
+        
+    }
+
+</script>
