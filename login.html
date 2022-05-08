@@ -76,21 +76,24 @@
             <input  id="login" type = "submit" value = "Login"  /><br><br>
         </form>
         <p>Forgot <a href="">Password</a>?</p>
-        <p>Don't have a account? <a href="">Sing up</a></p>
+        <p>Don't have a account? <a href="">Sign up</a></p>
     </div>
 </body>
 </html>
 <script>
     document.querySelector("#basicForm").addEventListener("submit",loginData);
     var signUpData=JSON.parse(localStorage.getItem("registrationData"));
-    console.log(signUpData)
+   // console.log(signUpData)
     function loginData(){
+        
+   
+    console.log(signUpData)
         if(signUpData.email==basicForm.email.value && signUpData.password==basicForm.password.value){
-             alert("Log in successfull")
-            window.open("mens.html")
+             alert("Log in successfull");
+            window.open("mens.html");
         }
         else if(signUpData.password!=basicForm.password.value){
-            alert("Password is incorrect")
+            alert("Password is incorrect");
         }
         else{
             alert("Incorrect details")

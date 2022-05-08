@@ -1,4 +1,4 @@
-Ranajit Das -> (create repo and pagelinking)
-Tridip Rong -> task-2(create navbar)
-Saksham Kumar Singh -> task-3(signup page)
-Akshaya Annadurai -> task-4(login page)
+1.Ranajit Das
+2.Tridip Rong
+3.Saksham Kumar Singh
+4.Akshaya Annadurai
