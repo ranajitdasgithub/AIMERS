@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +21,7 @@
             padding: 30px;
             /* grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(1, auto); */
-            
+
         }
         #basicForm>:nth-child(4){
             text-align: center;
@@ -95,16 +94,16 @@
     function registrationData(){
         event.preventDefault();
 
-        var formData = [];
+        // var formData = JSON.parse(localStorage.getItem("registrationData")) || [];
 
         var formObj = {
             email: basicForm.email.value,
             mobile: basicForm.number.value,
             password: basicForm.password.value
         }
-        formData.push(formObj);
+        // formData.push(formObj);
 
-        localStorage.setItem("registrationData", JSON.stringify(formData));
+        localStorage.setItem("registrationData", JSON.stringify(formObj));
         window.location.href = "login.html";
     }
 </script>
